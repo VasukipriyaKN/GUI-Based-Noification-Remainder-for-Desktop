@@ -1,5 +1,7 @@
 # GUI-Based-Noification-Remainder-for-Desktop
 
+
+The name of this is called "NOTIFINDER".
 Basically this is a GUI based Notification Remainder for Desktop.
 It remainds you with a particular Title and Message on your Desktop on a given time. Moreover it also sends you a text message to your mobile on a given time.
 
