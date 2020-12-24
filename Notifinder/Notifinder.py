@@ -34,16 +34,16 @@ def submit():
     notification.title = varTitle.get()
     notification.message = varMessage.get()
     notification._notification_application_name = "Notifinder"
-    notification.icon = "<Enter here>"
-    notification.audio = "<Enter here>"
+    notification.icon = "<Enter here>"                                                          #Here enter the directory of icon which is attached with it
+    notification.audio = "<Enter here>"                                                         #Here enter the directory of audio for notification which is attached with it
     notification.send()
     title.delete(0, 'end')
     message.delete(0, 'end')
     Time.delete(0, 'end')
 
     # Your Account Sid and Auth Token from twilio.com / console 
-    account_sid = '<Enter here>'
-    auth_token = '<Enter here>'
+    account_sid = '<Enter here>'                                                                #Here enter the account sid from twilio
+    auth_token = '<Enter here>'                                                                 #Here enter the authentication token from twilio
     
     client = Client(account_sid, auth_token) 
     
@@ -51,9 +51,9 @@ def submit():
     received from Twilio and the value of 'to' 
     with the number in which you want to send message.'''
     msg = client.messages.create(
-                                from_='+<Enter here>', 
-                                body = "Notifinder, Did you forgot something?...", 
-                                to ='+<Enter here>'
+                                from_='+<Enter here>',                                          #Here enter the sender's Mobile Number...You can get it from Twilio
+                                body = "Notifinder, Did you forgot something?...",              #Can customise your message
+                                to ='+<Enter here>'                                             #here enter receiver's Mobile Number
                                 ) 
     
     print(msg.sid)
