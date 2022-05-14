@@ -1,4 +1,4 @@
-# GUI-Based-Noification-Remainder-for-Desktop
+# GUI-Based-Notification-Remainder-for-Desktop
 
 WORKING: https://www.instagram.com/p/CO4sockhdWq/
 
